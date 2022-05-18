@@ -69,7 +69,7 @@ for(let i = 0; i < myArrayObject.length; i++){
     let itemsObject = myArrayObject[i];
 
     for (let chiave in itemsObject){
-        console.log(chiave + ":" + itemsObject[chiave]);
+        //console.log(chiave + ":" + itemsObject[chiave]);
         //console.log(itemsObject["nome"]);
         myImage.src = itemsObject["immagine"];
         myh3.innerHTML = itemsObject["nome"];
