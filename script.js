@@ -54,7 +54,6 @@ myButton.addEventListener("click",
 
 
 for(let i = 0; i < myArrayObject.length; i++){
-
     let teamContainer = document.querySelector(".team-container");
     let divTeamCard = document.createElement("div");
     divTeamCard.classList.add("team-card");
