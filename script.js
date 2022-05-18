@@ -41,14 +41,46 @@ let myArrayObject = [
 
 let myButton = document.getElementById("addMemberButton");
 
+// myButton.addEventListener("click",
+//     function(){
+//         let nome = document.getElementById("name").value;
+//         let ruolo = document.getElementById("role").value;
+//         let scriptImmagine = document.getElementById("image").value;
+//         let immagine = "img/"+scriptImmagine+".jpg";
+//         myArrayObject.push({immagine, nome, ruolo});
+//         console.log(myArrayObject);
+//     }
+// )
+
 myButton.addEventListener("click",
     function(){
+        let teamContainer = document.querySelector(".team-container");
+        let divTeamCard = document.createElement("div");
+        divTeamCard.classList.add("team-card");
+        let cardImage = document.createElement("div");
+        cardImage.classList.add("card-image");
+        let myImage = document.createElement("img");
+        let cardText = document.createElement("div");
+        cardText.classList.add("card-text");
+        let myh3 = document.createElement("h3");
+        let myp = document.createElement("p");
+
         let nome = document.getElementById("name").value;
         let ruolo = document.getElementById("role").value;
         let scriptImmagine = document.getElementById("image").value;
         let immagine = "img/"+scriptImmagine+".jpg";
-        myArrayObject.push({immagine, nome, ruolo});
-        console.log(myArrayObject);
+
+        myImage.src = immagine;
+        myh3.innerHTML = nome;
+        myp.innerHTML = ruolo;
+        
+        cardImage.append(myImage);
+        cardText.append(myh3, myp);
+
+        divTeamCard.append(cardImage, cardText);
+
+        teamContainer.append(divTeamCard);
+        
     }
 )
 
@@ -84,3 +116,6 @@ for(let i = 0; i < myArrayObject.length; i++){
 }
 
 
+function richiamoElementi(){
+    
+}
