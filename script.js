@@ -1,31 +1,13 @@
 let teamContainer = document.querySelector(".team-container");
-console.log(teamContainer);
-
-
-
 let divTeamCard = document.createElement("div");
 divTeamCard.classList.add("team-card");
-console.log(divTeamCard);
-
-
-
 let cardImage = document.createElement("div");
 cardImage.classList.add("card-image");
-
 let myImage = document.createElement("img");
-console.log(myImage);
-
-
-
 let cardText = document.createElement("div");
 cardText.classList.add("card-text");
-console.log(cardText);
-
 let myh3 = document.createElement("h3");
-console.log(myh3);
-
 let myp = document.createElement("p");
-console.log(myp);
 
 // oggetto--> chiave : valore,
 let myArrayObject = [
@@ -70,6 +52,17 @@ let myArrayObject = [
 console.log(myArrayObject);
 
 for(let i = 0; i < myArrayObject.length; i++){
+
+    let teamContainer = document.querySelector(".team-container");
+    let divTeamCard = document.createElement("div");
+    divTeamCard.classList.add("team-card");
+    let cardImage = document.createElement("div");
+    cardImage.classList.add("card-image");
+    let myImage = document.createElement("img");
+    let cardText = document.createElement("div");
+    cardText.classList.add("card-text");
+    let myh3 = document.createElement("h3");
+    let myp = document.createElement("p");
 
     let itemsObject = myArrayObject[i];
 
