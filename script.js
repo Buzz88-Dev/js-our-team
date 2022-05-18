@@ -42,25 +42,25 @@ let myArrayObject = [
     },
 
     {
-        "immagine" : "img/angela-caroll-chief-editor.jpg",
+        "immagine" : "img/walter-gordon-office-manager.jpg",
         "nome" : "Walter Gordon",
         "ruolo" : "Office Manager"
     },
 
     {
-        "immagine" : "img/angela-caroll-chief-editor.jpg",
+        "immagine" : "img/angela-lopez-social-media-manager.jpg",
         "nome" : "Angela Lopez",
         "ruolo" : "Social Media Manager"
     },
 
     {
-        "immagine" : "img/angela-caroll-chief-editor.jpg",
+        "immagine" : "img/scott-estrada-developer.jpg",
         "nome" : "Scott Estrada",
         "ruolo" : "Developer"
     },
 
     {
-        "immagine" : "img/angela-caroll-chief-editor.jpg",
+        "immagine" : "img/barbara-ramos-graphic-designer.jpg",
         "nome" : "Barbara Ramos",
         "ruolo" : "Graphic Designer"
     }
@@ -74,9 +74,9 @@ for(let i = 0; i < myArrayObject.length; i++){
     let itemsObject = myArrayObject[i];
 
     for (let chiave in itemsObject){
-        //console.log(chiave + ":" + itemsObject[chiave]);
+        console.log(chiave + ":" + itemsObject[chiave]);
         //console.log(itemsObject["nome"]);
-        myImage.innerHTML = itemsObject["immagine"];
+        myImage.src = itemsObject["immagine"];
         myh3.innerHTML = itemsObject["nome"];
         myp.innerHTML = itemsObject["ruolo"];
         
